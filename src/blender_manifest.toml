@@ -1,0 +1,14 @@
+schema_version = "1.0.0"
+
+id = "vertex_color_tools"
+version = "1.0.0"
+name = "Vertex Color Tools"
+tagline = "Quick way to do vertex coloring for id maps"
+maintainer = "Houssemeddine Jebali"
+type = "add-on"
+
+blender_version_min = "4.4.0"
+platforms = ["windows-x64"]
+license = [
+  "SPDX:CC BY-NC-SA 4.0",
+]
