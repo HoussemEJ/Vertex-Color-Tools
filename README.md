@@ -2,6 +2,8 @@
 
 Vertex Color Tools is a Blender Addon designed to simplify vertex coloring, making it easier to create ID maps for texturing workflows.
 
+[![Tutorial Video](https://img.youtube.com/vi/t_6o8yKfkTQ/0.jpg)](https://youtu.be/t_6o8yKfkTQ)
+
 ## Features
 
 * Assign random or selected vertex colors to multiple objects or specific faces.
