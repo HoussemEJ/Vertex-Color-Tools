@@ -1,8 +1,8 @@
 bl_info = {
     "name": "Vertex Color Tools",
     "author": "Houssemeddine Jebali",
-    "version": (1, 0, 0),
-    "blender": (4, 4, 0),
+    "version": (1, 0, 1),
+    "blender": (5, 0, 1),
     "location": "3D View > N-Panel",
     "description": "Quick way to do vertex coloring for id maps",
     "category": "3D View",

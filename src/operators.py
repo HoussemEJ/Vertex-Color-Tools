@@ -20,16 +20,16 @@ class VCT_OT_assign_vertex_color(bpy.types.Operator):
         for obj in selected_objects:
             context.view_layer.objects.active = obj
             bpy.ops.object.mode_set(mode='VERTEX_PAINT')
-            obj.data.use_paint_mask = True
+            bpy.context.object.data.use_paint_mask = True
 
-            if context.scene.randomize_color:
+            if context.scene.randomize_color: 
                 color = self.generate_random_color()
             else:
                 color_picker = context.scene.vertex_color_picker
                 color = (color_picker[0], color_picker[1], color_picker[2])
 
-            bpy.context.tool_settings.vertex_paint.brush.color = color
-            bpy.ops.paint.vertex_color_set()
+            bpy.context.scene.tool_settings.vertex_paint.unified_paint_settings.color = color
+            bpy.ops.paint.vertex_color_set(use_alpha=True)
 
         bpy.ops.object.mode_set(mode='OBJECT')
 
@@ -46,5 +46,5 @@ def register():
 
 def unregister():
     from bpy.utils import unregister_class
-    for cls in classes:
+    for cls in reversed(classes):
         unregister_class(cls)
